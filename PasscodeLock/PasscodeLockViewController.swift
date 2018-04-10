@@ -16,7 +16,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         case changePasscode
         case removePasscode
         
-		func getState(_ stringsToShow: StringsToBeDisplayed?, tintColor: UIColor?, font: UIFont?) -> PasscodeLockStateType {
+		public func getState(_ stringsToShow: StringsToBeDisplayed?, tintColor: UIColor?, font: UIFont?) -> PasscodeLockStateType {
             
             switch self {
 			case .enterPasscode: 	return EnterPasscodeState(stringsToShow: stringsToShow, tintColor: tintColor, font: font)
